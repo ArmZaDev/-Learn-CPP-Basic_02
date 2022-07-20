@@ -2,6 +2,10 @@
 using namespace std;
 int main()
 {
-    cout << "Hello World!\n";
+    cout << "   /|" << endl;
+    cout << "  / |" << endl;
+    cout << " /  |" << endl;
+    cout << "/___|" << endl;
+       
 }
 
