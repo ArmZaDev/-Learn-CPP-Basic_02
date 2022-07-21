@@ -1,23 +1,17 @@
 ﻿#include <iostream>
 using namespace std;
 
-double cube(double num) {
-    double result = num * num * num;
-    return result;
-    // return num * num * num;
-}
-
 int main()
 {
-    double answer;
+    bool isMale = true;
+    bool isTall = false;
 
-    cout << "Enter num: ";
-    cin >> answer;  
-
-    answer = cube(answer);
-    cout << answer;
-
-    //cout << cube(5.0);
+    if (isMale || isTall) {
+        cout << "You are a tall male";
+    }
+    else {
+        cout << "You are not male";
+    }
      
 }
 
