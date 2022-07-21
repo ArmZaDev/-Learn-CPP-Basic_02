@@ -1,22 +1,31 @@
 ﻿#include <iostream>
 using namespace std;
 
+/*
+    cout << "Age: " << &age << endl;
+    cout << "Gpa: " << &gpa << endl;
+    cout << "Name: " << &name << endl;
+*/
+
 int main()
 {
-    int numberGrid[3][2] = {
-                            {1, 2},
-                            {3, 4},
-                            {5, 6}
-                           };
+    int age = 19;
+    int *pAge = &age;
 
-    for (int i = 0; i < 3; i++) 
-    {
-        for (int j = 0; j < 2; j++) 
-        {
-            cout << numberGrid[i][j];
-        }
-        cout << endl;
-    }
+    double gpa = 2.7;
+    double *pGpa = &gpa;
+
+    string name = "Mike";
+    string *pName = &name;
+
+    cout << *pAge << endl;
+
+    cout << *&gpa << endl;
+    cout << &*&gpa << endl;
+
+    cout << pName << endl;
+    cout << *pName << endl;
+
 
 }
 
