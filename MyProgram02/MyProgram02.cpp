@@ -3,15 +3,18 @@ using namespace std;
 
 int main()
 {
-    double num1, num2;
+    string color, pluralNoun, celebrity;
 
-    cout << "Enter first number: ";
-    cin >> num1;
+    cout << "Enter a color: ";
+    cin >> color;
+    cout << "Enter a pluralNoun: ";
+    cin >> pluralNoun;
+    cout << "Enter a celebrity: ";
+    cin >> celebrity;
 
-    cout << "Enter second number:";
-    cin >> num2;
-
-    cout << "Result = " << num1 + num2;
+    cout << "Roses are " << color << endl;
+    cout << pluralNoun << " are blue" << endl;
+    cout << "I love " << celebrity << endl;
      
 }
 
