@@ -3,20 +3,15 @@ using namespace std;
 
 int main()
 {
-    int age;
+    double num1, num2;
 
-    cout << "Enter your age: ";
-    cin >> age;
+    cout << "Enter first number: ";
+    cin >> num1;
 
-    cout << "You are " << age << " years old";
+    cout << "Enter second number:";
+    cin >> num2;
 
-    /*
-    string name;
-    cout << "Enter your name: ";
-    cin >> name;
-
-    cout << "Hello" << name;
-    */
+    cout << "Result = " << num1 + num2;
      
 }
 
