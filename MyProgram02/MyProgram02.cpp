@@ -3,18 +3,9 @@ using namespace std;
 
 int main()
 {
-    string color, pluralNoun, celebrity;
+    int luckyNums[] = { 4, 8, 15, 16, 23, 42 };
 
-    cout << "Enter a color: ";
-    cin >> color;
-    cout << "Enter a pluralNoun: ";
-    cin >> pluralNoun;
-    cout << "Enter a celebrity: ";
-    cin >> celebrity;
-
-    cout << "Roses are " << color << endl;
-    cout << pluralNoun << " are blue" << endl;
-    cout << "I love " << celebrity << endl;
+    cout << luckyNums[0];
      
 }
 
