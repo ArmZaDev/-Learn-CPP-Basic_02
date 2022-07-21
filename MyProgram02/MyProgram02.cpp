@@ -3,31 +3,11 @@ using namespace std;
 
 int main()
 {
-    int secretNum = 7;
-    int guess{};
-    int guessCount = 0;
-    int guessLimit = 3;
-    bool outOfGuesses = false;
+    int nums[] = { 1, 2, 5, 7, 3 };
 
-    while (secretNum != guess && !outOfGuesses) 
+    for(int index = 0; index < 5; index++)
     {
-        if (guessCount < guessLimit) 
-        {
-            cout << "Enter guess: ";
-            cin >> guess;
-            guessCount++;
-        }
-        else
-        {
-            outOfGuesses = true;
-        }
-    }
-
-    if (outOfGuesses) {
-        cout << "You Lose!";
-    }
-    else {
-        cout << "You Win!";
+        cout << nums[index] << endl;
     }
 
 }
