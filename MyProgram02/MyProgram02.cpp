@@ -1,11 +1,20 @@
 ﻿#include <iostream>
 using namespace std;
 
+void sayHi(string name, int age); 
+
 int main()
 {
-    int luckyNums[] = { 4, 8, 15, 16, 23, 42 };
+    string name;
+    name = "Tommy";
+    int age = 45;
 
-    cout << luckyNums[0];
+    sayHi(name, age);
+    sayHi("Jhon", 30);
      
+}
+
+void sayHi(string name, int age) {
+    cout << "Hello " << name << " you are " << age;
 }
 
