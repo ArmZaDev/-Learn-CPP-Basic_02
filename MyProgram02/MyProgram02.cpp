@@ -1,31 +1,36 @@
 ﻿#include <iostream>
 using namespace std;
 
-/*
-    cout << "Age: " << &age << endl;
-    cout << "Gpa: " << &gpa << endl;
-    cout << "Name: " << &name << endl;
-*/
+class Book 
+{
+    public:
+        string title;
+        string author;
+        int pages;
+};
 
 int main()
 {
-    int age = 19;
-    int *pAge = &age;
+    
+    Book book1;
 
-    double gpa = 2.7;
-    double *pGpa = &gpa;
+    book1.title = "Harry Potter";
+    book1.author = "JK Rowling";
+    book1.pages = 500;
 
-    string name = "Mike";
-    string *pName = &name;
+    Book book2;
 
-    cout << *pAge << endl;
+    book2.title = "Lord of the Rings";
+    book2.author = "Tolkein";
+    book2.pages = 700;
 
-    cout << *&gpa << endl;
-    cout << &*&gpa << endl;
+    cout << book1.title << endl;
+    cout << book1.author << endl;
+    cout << book1.pages << endl;
 
-    cout << pName << endl;
-    cout << *pName << endl;
-
+    cout << book2.title << endl;
+    cout << book2.author << endl;
+    cout << book2.pages << endl;
 
 }
 
