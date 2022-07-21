@@ -1,14 +1,21 @@
 ﻿#include <iostream>
 using namespace std;
 
+int power(int baseNum, int powNum) 
+{
+    int result = 1;
+
+    for (int i = 0; i < powNum; i++) 
+    {
+        result = result * baseNum;
+    }
+
+    return result;
+}
+
 int main()
 {
-    int nums[] = { 1, 2, 5, 7, 3 };
-
-    for(int index = 0; index < 5; index++)
-    {
-        cout << nums[index] << endl;
-    }
+    cout << power(2, 5);
 
 }
 
