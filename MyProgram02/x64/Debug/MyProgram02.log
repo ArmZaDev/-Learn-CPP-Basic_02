@@ -1,2 +1,4 @@
 ﻿  MyProgram02.cpp
+C:\Learn C and C++\CPP\MyProgram02\MyProgram02\MyProgram02.cpp(28,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Learn C and C++\CPP\MyProgram02\MyProgram02\MyProgram02.cpp(29,35): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   MyProgram02.vcxproj -> C:\Learn C and C++\CPP\MyProgram02\x64\Debug\MyProgram02.exe

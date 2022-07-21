@@ -1,26 +1,37 @@
 ﻿#include <iostream>
 using namespace std;
 
-class Book 
+class Student 
 {
     public:
-        string title;
-        string author;
-        int pages;
-        Book(string aTitle, string aAuthor, int aPages) {
-            title = aTitle;
-            author = aAuthor;
-            pages = aPages;
+        string name;
+        string major;
+        double gpa;
+
+        Student(string aName, string aMajor, int aGpa) {
+            name = aName;
+            major = aMajor;
+            gpa = aGpa;
+        }
+
+        bool hasHonors() {
+            if (gpa >= 2.0) {
+                return true;
+            }
+            return false;
         }
 };
 
 int main()
 {
     
-    Book book1("Harry Potter", "JK Rowling", 500);
-    Book book2("Lord of the Rings", "Tolkein", 700);
+    Student student1("Naruto", "Ninja", 1.5);
+    Student student2("NP", "Art", 2.96);
+
+    cout << student1.hasHonors() << endl;
+    cout << student2.hasHonors() << endl;
+
    
-    cout << book1.title << endl;
 }
 
 
