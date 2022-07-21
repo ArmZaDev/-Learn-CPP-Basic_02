@@ -1,20 +1,24 @@
 ﻿#include <iostream>
 using namespace std;
 
-void sayHi(string name, int age); 
+double cube(double num) {
+    double result = num * num * num;
+    return result;
+    // return num * num * num;
+}
 
 int main()
 {
-    string name;
-    name = "Tommy";
-    int age = 45;
+    double answer;
 
-    sayHi(name, age);
-    sayHi("Jhon", 30);
+    cout << "Enter num: ";
+    cin >> answer;  
+
+    answer = cube(answer);
+    cout << answer;
+
+    //cout << cube(5.0);
      
 }
 
-void sayHi(string name, int age) {
-    cout << "Hello " << name << " you are " << age;
-}
 
