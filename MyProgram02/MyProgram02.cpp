@@ -1,40 +1,44 @@
 ﻿#include <iostream>
 using namespace std;
 
-int getMax(int num1, int num2, int num3) {
-    int result;
-
-    if (num1 >= num2 && num1 >= num3) { 
-        result = num1;
-    }
-    else if(num2 >= num1 && num2 >= num3) 
-    { 
-        result = num2;
-    }
-    else {
-        result = num3;
-    }
-
-    return result;
-}
-
 int main()
 {
-    int findMax;
-    int num1, num2, num3;
+    int num1, num2;
+    int result;
+    char op;
 
-    cout << "Enter num1: ";
+    cout << "Enter first number: ";
     cin >> num1;
-    cout << "Enter num2: ";
+    cout << "Enter operator: ";
+    cin >> op;
+    cout << "Enter second number: ";
     cin >> num2;
-    cout << "Enter num2: ";
-    cin >> num3;
 
-    findMax = getMax(num1, num2, num3);
-    cout << findMax;
+    if (op == '+') 
+    {
+        result = num1 + num2;
+    }
+    else if (op == '-') 
+    {
+        result = num1 - num2;
+    }
+    else if (op == '*') 
+    {
+        result = num1 * num2;
+    }
+    else if (op == '/') 
+    {
+        result = num1 / num2;
+    }
+    else if (op == '%') 
+    {
+        result = num1 % num2;
+    }
+    else {
+        cout << "Invalid Operator";
+    }
+    cout << "Result = " << result;
 
-    //cout << getMax(5, 10, 15);;
-     
 }
 
 
