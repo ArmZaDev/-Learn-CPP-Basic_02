@@ -1,37 +1,39 @@
 ﻿#include <iostream>
 using namespace std;
 
-class Student 
+class Movie 
 {
     public:
-        string name;
-        string major;
-        double gpa;
+        string title;
+        string director;
+        string rating;
 
-        Student(string aName, string aMajor, int aGpa) {
-            name = aName;
-            major = aMajor;
-            gpa = aGpa;
+        Movie(string aTitle, string aDirector, string aRating) {
+            title = aTitle;
+            director = aDirector;
+            setRating(aRating);
         }
-
-        bool hasHonors() {
-            if (gpa >= 2.0) {
-                return true;
+        void setRating(string aRating) {
+            if (aRating == "G" || aRating == "PG" || aRating == "PG-13" || aRating == "R" || aRating == "NR") {
+                rating = aRating;
             }
-            return false;
+            else {
+                rating = "NR";
+            }
+            
         }
+
+        string getRating() {
+            return rating;
+        }
+
 };
 
 int main()
 {
     
-    Student student1("Naruto", "Ninja", 1.5);
-    Student student2("NP", "Art", 2.96);
+    Movie avengers("The Avengers", "Joss Whedon", "PG-13");
 
-    cout << student1.hasHonors() << endl;
-    cout << student2.hasHonors() << endl;
+    cout << avengers.getRating();
 
-   
 }
-
-
