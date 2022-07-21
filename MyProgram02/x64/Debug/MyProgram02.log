@@ -1,2 +1,2 @@
 ﻿  MyProgram02.cpp
-  MyProgram02.vcxproj -> C:\Learn C and C++\CPP\MyProgram02\x64\Debug\MyProgram02.exe
+C:\Learn C and C++\CPP\MyProgram02\MyProgram02\MyProgram02.cpp(12): error C4700: uninitialized local variable 'guess' used

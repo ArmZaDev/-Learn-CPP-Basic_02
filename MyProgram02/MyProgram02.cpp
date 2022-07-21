@@ -3,21 +3,33 @@ using namespace std;
 
 int main()
 {
-    int index = 1;
-    
-    while (index <= 5) {
-        cout << index << endl;
-        index++;
+    int secretNum = 7;
+    int guess{};
+    int guessCount = 0;
+    int guessLimit = 3;
+    bool outOfGuesses = false;
+
+    while (secretNum != guess && !outOfGuesses) 
+    {
+        if (guessCount < guessLimit) 
+        {
+            cout << "Enter guess: ";
+            cin >> guess;
+            guessCount++;
+        }
+        else
+        {
+            outOfGuesses = true;
+        }
     }
 
-    /*
-    index = 6;
+    if (outOfGuesses) {
+        cout << "You Lose!";
+    }
+    else {
+        cout << "You Win!";
+    }
 
-    do {
-        cout << index << endl;
-        index++;
-    } while (index <= 5);
-    */
 }
 
 
