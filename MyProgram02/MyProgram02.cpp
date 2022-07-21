@@ -2,14 +2,13 @@
 using namespace std;
 int main()
 {
-    string chracterName = "Jhon Selby";
-    int characterAge;
-    characterAge = 25;
+    char grade = 'A';
+    string phrase = "Inazuma";
+    int age = 50;
+    double gpa = 4.00;
+    bool isMale = true;
 
-    cout << "There once was a man named " << chracterName << endl;
-    cout << "He was " << characterAge << " years old" << endl;
-    cout << "He liked the name " << chracterName << endl;
-    cout << "But did not like being " << characterAge << endl;
+    cout << grade << endl;
        
 }
 
